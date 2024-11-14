@@ -168,6 +168,9 @@
       }
     }
   }
+  @include maxWidth(sm){
+
+  }
 }
 
 .icons-container {
@@ -187,6 +190,22 @@
     transition: 300ms ease-in-out;
     &:hover {
       transform: translateY(-10px);
+    }
+  }
+  @include maxWidth(sm){
+    width: 360px;
+    height: 400px;
+    #slide1{
+        top: 150px !important;
+        left: 200px !important;
+    }
+    #slide2{
+        top: 188px !important;
+        left: 154px !important;
+    }
+    #slide3{
+        top: 224px !important;
+        left: 107px !important;
     }
   }
 }
