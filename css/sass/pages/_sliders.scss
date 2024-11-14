@@ -1,0 +1,93 @@
+.swiper-landing {
+  @include full-w-h;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      position: relative;
+      background-color: #000;
+
+      .container {
+        position: relative;
+        height: 100%;
+      }
+
+      .bg-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include set-cover-img;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 3%;
+    @include flex-justify(flex-end);
+    padding: 0 2%;
+
+    .swiper-pagination-bullet {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+      transition: $sm-transition;
+      background-color: $white-color;
+
+      &.swiper-pagination-bullet-active {
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+.swiper-works {
+  height: fit-content;
+  padding: 15px 15px 70px;
+
+  .holder-control {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 280px;
+    max-width: 100%;
+    transform: translateX(-50%);
+    @include flex-justify(center);
+    .swiper-pagination {
+      z-index: unset;
+      .swiper-pagination-bullet {
+        width: 32px;
+        height: 4px;
+        border-radius: 6px;
+        opacity: 1;
+        transition: $sm-transition;
+        background-color: rgba(47, 47, 47, 0.3);
+        &.swiper-pagination-bullet-active {
+          background-color: $main-color;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: fit-content;
+      &::after {
+        font-size: 19px;
+        font-weight: 700;
+        color: $main-color;
+      }
+    }
+    .swiper-button-next {
+      left: 0%;
+    }
+    .swiper-button-prev {
+      left: 0%;
+    }
+  }
+}

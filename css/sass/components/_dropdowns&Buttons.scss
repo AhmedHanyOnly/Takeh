@@ -1,0 +1,100 @@
+.btn-sub {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  background-color: $main-color;
+  color: $white-color;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: $main-transition;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  &:hover {
+    background-color: #fff;
+    border: 1px solid $main-color;
+    color: $main-color;
+  }
+
+}
+
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border: 1px solid $main-color;
+  background-color: #fff;
+  color: $main-color;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: $main-transition;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+  }
+
+}
+
+.main-btn {
+  @include flex-center;
+  padding: 10px 13px;
+  border: 1px solid $main-color;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $white-color;
+  background-color: $main-color;
+  transition: $sm-transition;
+
+  &.main-outline {
+    color: $main-color;
+    background-color: transparent;
+
+    &:hover {
+      color: $white-color;
+      background-color: $main-color;
+    }
+  }
+  
+}
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border:  1px solid $main-color;
+  background-color: #fff;
+  color: $main-color;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: $main-transition;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+  }
+  
+}
+
+.btn-collaps{
+  background-color: #fffbf0;
+  box-shadow: 0 0 5px #ddd;
+  color: $main-color;
+  transition: 300ms all ease-in-out;
+  width: 100% !important;
+  &.active,&:hover{
+    background-color: $main-color !important;
+    color: #fff !important;
+  }
+
+}

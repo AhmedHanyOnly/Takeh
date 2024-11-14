@@ -1,0 +1,100 @@
+.main-heading {
+  margin-bottom: 35px;
+  color: #2f2f2f;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+
+  span {
+    color: $main-color;
+  }
+
+  &.sm-b {
+    margin-bottom: 15px;
+  }
+}
+
+.main-des {
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: $sec-color;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 620px;
+
+  &.lg {
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  @include maxWidth(sm) {
+    width: 100%;
+  }
+}
+
+.shape-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 52px;
+  color: $main-color;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .img {
+    display: block;
+    margin: 6px auto 0;
+    width: 80%;
+    max-width: 139px;
+    height: auto;
+    @include main-color-filter;
+  }
+}
+
+.small-heading {
+  text-align: center;
+  color: $white-color;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bg-title {
+  background-color: $main-color;
+  border-right: 4px solid $sec-color;
+  color: $white-color;
+  font-size: 17px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 10px;
+  padding: 0 15px;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 10px;
+  color: #2f2f2f;
+  width: fit-content;
+
+  &.white {
+    color: #fff;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: $main-color;
+    bottom: 0;
+    inset-inline-start: 0;
+  }
+}
