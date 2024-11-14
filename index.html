@@ -411,7 +411,6 @@
     </div>
     <!-- End customer -->
 
-    
     <!-- Start map -->
     <div class="map py-4">
       <div class="container">
@@ -573,9 +572,16 @@
                           ></textarea>
                         </div>
                       </div>
-                      <div class="d-flex justify-content-end">
-                        <button class="btn-sub">إرسال</button>
-                      </div>
+                      <form action="?" method="POST">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LdHa34qAAAAALTk2c94fRMiR3EuFBj8pkYo7IuA"
+                        ></div>
+                        <br />
+                        <div class="d-flex justify-content-end">
+                          <button class="btn-sub">إرسال</button>
+                        </div>
+                      </form>
                     </div>
                   </form>
                 </div>
@@ -641,9 +647,16 @@
                           </div>
                         </div>
                       </div>
-                      <div class="d-flex justify-content-end">
-                        <button class="btn-sub">إرسال</button>
-                      </div>
+                      <form action="?" method="POST">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LdHa34qAAAAALTk2c94fRMiR3EuFBj8pkYo7IuA"
+                        ></div>
+                        <br />
+                        <div class="d-flex justify-content-end">
+                          <button class="btn-sub">إرسال</button>
+                        </div>
+                      </form>
                     </div>
                   </form>
                 </div>
@@ -706,9 +719,16 @@
                           />
                         </div>
                       </div>
-                      <div class="d-flex justify-content-end">
-                        <button class="btn-sub">إرسال</button>
-                      </div>
+                      <form action="?" method="POST">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LdHa34qAAAAALTk2c94fRMiR3EuFBj8pkYo7IuA"
+                        ></div>
+                        <br />
+                        <div class="d-flex justify-content-end">
+                          <button class="btn-sub">إرسال</button>
+                        </div>
+                      </form>
                     </div>
                   </form>
                 </div>
@@ -731,7 +751,7 @@
     <!-- End about -->
 
     <!-- start footer -->
-    <footer class="footer" data-aos="fade-up"  data-aos-duration="1500">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1500">
       <div class="footer-top">
         <div class="container">
           <div class="d-flex justify-content-between flex-wrap gap-3">
@@ -800,6 +820,13 @@
 
     <!-- end footer -->
     <!-- Js Scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async
+      defer
+    ></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
