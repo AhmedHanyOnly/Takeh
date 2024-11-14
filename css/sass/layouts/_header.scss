@@ -47,7 +47,7 @@
             text-align: right;
             transition: transform ease-out 0.3s;
             background-color: transparent;
-
+            
             .icon {
               width: 20px;
               height: auto;
@@ -55,7 +55,8 @@
             }
 
             &:hover {
-              transform: scale(1.04);
+              transform: scale(1.2);
+              color: $main-color
             }
           }
 
