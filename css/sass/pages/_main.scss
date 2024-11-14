@@ -168,8 +168,8 @@
       }
     }
   }
-  @include maxWidth(sm){
-
+  @include maxWidth(sm) {
+    height: 350px;
   }
 }
 
@@ -192,20 +192,20 @@
       transform: translateY(-10px);
     }
   }
-  @include maxWidth(sm){
+  @include maxWidth(sm) {
     width: 360px;
     height: 400px;
-    #slide1{
-        top: 150px !important;
-        left: 200px !important;
+    #slide1 {
+      top: 150px !important;
+      left: 200px !important;
     }
-    #slide2{
-        top: 188px !important;
-        left: 154px !important;
+    #slide2 {
+      top: 188px !important;
+      left: 154px !important;
     }
-    #slide3{
-        top: 224px !important;
-        left: 107px !important;
+    #slide3 {
+      top: 224px !important;
+      left: 107px !important;
     }
   }
 }
