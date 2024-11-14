@@ -82,3 +82,16 @@ if (document.getElementById("up-btn")) {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
   );
 }
+
+
+function activateSlide(slideId) {
+  var slides = document.querySelectorAll('.slide');
+  slides.forEach(function(slide) {
+    slide.classList.remove('active');
+  });
+
+  var activeSlide = document.getElementById(slideId);
+  if (activeSlide) {
+    activeSlide.classList.add('active');
+  }
+}
